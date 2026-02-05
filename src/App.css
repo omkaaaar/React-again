@@ -1,0 +1,21 @@
+.app {
+  min-height: 100vh;
+}
+
+.pane {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 32px 16px;
+  box-sizing: border-box;
+}
+
+.pane-counter {
+  background: #97a7eb;
+}
+
+.pane-showhide {
+  background: #bf82eb;
+}
