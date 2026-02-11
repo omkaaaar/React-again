@@ -2,6 +2,8 @@ import Counter from "./Components/Counter";
 import ShowHide from "./Components/ShowHide";
 import "./App.css";
 import Profile from "./Components/Profile";
+import PropsEvents from "./Components/PropsEvents";
+import { useState } from "react";
 
 const App = () => {
   const users = [
@@ -13,6 +15,8 @@ const App = () => {
     { name: "Sadiya", age: 23, address: "Bangalore" },
     { name: "Rishab", age: 23, address: "Belgaum" },
   ];
+
+  const [count, setCount]= useState(0)
   return (
     <div className="app">
       <section className="pane pane-counter">
@@ -23,6 +27,9 @@ const App = () => {
       </section>
       <section className="pane pane-profile">
         <Profile  users={users}/>
+      </section>
+      <section className="pane pane-PropsEvents">
+        <PropsEvents count={count} increment={setCount}/>
       </section>
     </div>
   );
