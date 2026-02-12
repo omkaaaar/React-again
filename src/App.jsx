@@ -4,6 +4,7 @@ import "./App.css";
 import Profile from "./Components/Profile";
 import PropsEvents from "./Components/PropsEvents";
 import { useState } from "react";
+import StateLifting from "./Components/StateLifting";
 
 const App = () => {
   const users = [
@@ -31,6 +32,7 @@ const App = () => {
       <section className="pane pane-PropsEvents">
         <PropsEvents count={count} increment={setCount}/>
       </section>
+      <StateLifting />
     </div>
   );
 };
